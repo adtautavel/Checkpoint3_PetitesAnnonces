@@ -4,5 +4,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Modify</h1>
+<h1>Modifier une annonce</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Les petites Annonces.com</h1>
+</div>
+<section class="container-fluid p-0 ">
+    <article class="card-deck p-0  m-0 d-flex flex-column flex-lg-row justify-content-between">
+        <div class="card m-3">
+            <div class="card-header pb-0" style="color: #201063; ">
+                <h5 class="card-title" style="font-weight: bold;"><i class="fas fa-history"></i> Annonce</h5>
+            </div>
+            <div class="card-body ">
+                <p class="card-text">
+                    <form action="">
+                        <label for="Object">Objet à vendre : </label>
+                        <input type="text" id="text modif" value="Un objet" /><br />
+                        <label for="Description">Description :</label>
+                        <input type="text" id="Description_modif" value="Une description" /><br />
+                        <label for="Price"> Combien :</label>  
+                        <input type="text" id="Price_Modif" value="Un prix"/><br /><br />
+                        <input type="submit" value="Modifier" />
+                    </form>
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
 

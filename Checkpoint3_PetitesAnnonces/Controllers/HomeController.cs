@@ -23,7 +23,12 @@ namespace Checkpoint3_PetitesAnnonces.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public IActionResult Modify()
         {
             return View();
         }
