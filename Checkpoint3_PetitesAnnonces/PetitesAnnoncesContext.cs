@@ -15,6 +15,17 @@ namespace Checkpoint3_PetitesAnnonces
         {
             optionsBuilder.UseSqlServer(
                 @"Server=LOCALHOST\SQLEXPRESS;Database=PetitesAnnonces;Integrated Security=True");
+
+
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<Annonce>()
+                .HasKey(a => new { a.Annonce_Id });
+            builder.Entity<User>()
+                .HasKey(u => new { u.User_id });
         }
     }
 }

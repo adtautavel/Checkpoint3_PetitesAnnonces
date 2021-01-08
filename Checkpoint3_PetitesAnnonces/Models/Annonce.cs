@@ -7,7 +7,7 @@ namespace Checkpoint3_PetitesAnnonces.Models
 {
     public class Annonce
     {
-        public Guid Annonce_Id { get; set; }
+        public int Annonce_Id { get; set; }
         public string Title { get; set; }
         public string ObjectForSale { get; set; }
         public string Description { get; set; }

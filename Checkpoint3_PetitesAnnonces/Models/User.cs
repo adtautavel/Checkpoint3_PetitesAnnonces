@@ -7,7 +7,7 @@ namespace Checkpoint3_PetitesAnnonces.Models
 {
     public class User
     {
-        public Guid User_id { get; set; }
+        public int User_id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
